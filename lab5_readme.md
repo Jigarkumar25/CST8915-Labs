@@ -41,8 +41,8 @@ services:
     ports:
       - "80:80"
     environment:
-      - VUE_APP_ORDER_SERVICE_URL=http://4.155.20.31:3000
-      - VUE_APP_PRODUCT_SERVICE_URL=http://4.155.20.31:3030
+       - VUE_APP_ORDER_SERVICE_URL=http://order-service:3000
+       - VUE_APP_PRODUCT_SERVICE_URL=http://product-service:3030
     depends_on:
       - product-service
       - order-service
@@ -84,8 +84,9 @@ services: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;ports: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- "80:80" <br>
 &nbsp;&nbsp;&nbsp;&nbsp;environment: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- VUE_APP_ORDER_SERVICE_URL=http://4.155.20.31:3000 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- VUE_APP_PRODUCT_SERVICE_URL=http://4.155.20.31:3030 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- VUE_APP_ORDER_SERVICE_URL=http://order-service:3000 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- VUE_APP_PRODUCT_SERVICE_URL=http://product-service:3030 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;depends_on: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- product-service <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- order-service <br>
+
